@@ -1,8 +1,29 @@
-.env
-.env.local
+# Git
 .git
 .gitignore
-README.md
-.DS_Store
-*.md
 
+# Documentation
+*.md
+README.md
+
+# Environment files
+.env
+.env.local
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+
+# Test files
+*_test.go
+*.test.go
+
+# Temporary files
+*.tmp
+*.temp

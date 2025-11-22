@@ -4,13 +4,13 @@ FROM golang:1.21-alpine AS builder
 WORKDIR /app
 
 # Copy go mod files
-COPY go.mod ./
+COPY go.mod go.sum* ./
 RUN go mod download
 
 # Copy source code
 COPY . .
 
-# Generate go.sum and build
+# Generate go.sum if missing and build
 RUN go mod tidy && CGO_ENABLED=0 GOOS=linux go build -o server ./cmd/server
 
 # Runtime stage

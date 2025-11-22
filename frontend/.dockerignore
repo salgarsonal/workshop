@@ -1,12 +1,42 @@
-node_modules
-npm-debug.log
-.env
-.env.local
+# Git
 .git
 .gitignore
-README.md
-.DS_Store
-dist
-build
-*.md
 
+# Documentation
+*.md
+README.md
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dependencies (installed in container)
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Test files
+*.test.js
+*.spec.js
+__tests__/
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
